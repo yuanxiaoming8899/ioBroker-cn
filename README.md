@@ -1,111 +1,57 @@
-![Logo](img/logos/ioBroker_Logo_Long_Vector.svg)
-# ioBroker (windows installer)
-
-[![NPM version](https://img.shields.io/npm/v/iobroker.svg)](https://www.npmjs.com/package/iobroker)
-[![Downloads](https://img.shields.io/npm/dm/iobroker.svg)](https://www.npmjs.com/package/iobroker)
-
-[![NPM](https://nodei.co/npm/iobroker.png?downloads=true)](https://nodei.co/npm/iobroker/)
-
-*Automate your life!*
-
-To install on Linux just run: `npx @iobroker/install`
-
-To install on Windows: `mkdir C:\iobroker && cd C:\iobroker && npx @iobroker/install` or use [installer](https://github.com/ioBroker/ioBroker.build)
-
-See [ioBroker documentation](https://www.iobroker.net/#en/documentation) for more information
-
-* [ioBroker website](https://www.iobroker.net)
-* [Forum](https://forum.iobroker.net)
-* [Requests for adapters](https://github.com/ioBroker/AdapterRequests/issues)
-
-ioBroker is an integration platform for the [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_Things), focused on Building Automation, Smart Metering, Ambient Assisted Living, Process Automation, Visualization and Data Logging.
-
-## Concept
-
-ioBroker is not just an application, it's more of a concept and a database schema.
-It offers a very easy way for systems to interoperate. 
-ioBroker defines some common rules for a pair of databases used to exchange data and publish events between different systems.
-
-![architecture](img/architecture.png)
-
-### Databases
-
-ioBroker uses "in memory" database to hold the data and saves it on disk with reasonable intervals. 
-There are two types of storage:
-- objects (meta/configuration information)
-- states (values)
-
-Objects and states can be stored in "in memory" or in Redis.
-
-[Redis](https://redis.io/) is an in-memory key-value data store and also a message broker with publish/subscribe pattern.
-
-It's used to maintain and publish all states of connected systems.
-
-### Adapters
-
-Systems are attached to ioBrokers databases via so-called adapters, technically processes running anywhere
-in the network and connecting all kinds of systems to ioBrokers databases. 
-A connection to ioBrokers databases can be implemented in nearly any programming language on nearly any platform 
-and an adapter can run on any host that is able to reach the databases via ip networking.
-
-See actual list of adapters on [iobroker.net](https://www.iobroker.net/#en/adapters)
-
-### Security
-
-ioBroker is designed to be accessed by trusted adapters inside trusted networks. 
-This means that usually it is not a good idea to expose the ioBroker databases, 
-adapters or any smart home devices directly to the internet or, in general, 
-to an environment where untrusted clients can directly access these network services. 
-Adapters that offer services supposed to be exposed to the internet should be handled with care. 
-You should always activate **HTTPS** and use valid certificates for web, admin if open it for internet or 
-for example use it with additional security measures like VPN, VLAN and reverse proxies.
-
-## Getting Started
-### Operating System and Hardware
-[ioBroker.js-controller](https://github.com/iobroker/ioBroker.js-controller/) should run on any hardware 
-and OS that runs [Node.js](https://nodejs.org/) (ARM, x86, Windows, Linux, OSX).
-
-ioBroker spawns a new Node.js process for every adapter instance, so RAM becomes a limiting factor. 
-A single adapter's memory fingerprint is roundabout 10 to 60 MB.
-
-### Installation and first steps
-* [ioBroker Download](https://www.iobroker.net/#en/download)
-
-### Community support
-* Get help in the [ioBroker Forums](https://forum.iobroker.net) (english, german and russian languages)
-
-## Logos and pictures
-
-**All logos are protected by copyright and may not be used without permission.**
-
-Please request permission via info@iobroker.net
-
-[Logos](https://github.com/ioBroker/ioBroker/tree/master/img)
-
-## License
-
-This module is distributor under the MIT License (MIT). 
-**Please notice, that other ioBroker adapters can have different licenses.**
-
-The MIT License (MIT)
-
-Copyright (c) 2014-2023 bluefox <dogafox@gmail.com>,
-Copyright (c) 2014      hobbyquaker
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/ioBroker/ioBroker/blob/master/img/logos/ioBroker_Logo_Long_Vector.svg"><img src="/ioBroker/ioBroker/raw/master/img/logos/ioBroker_Logo_Long_Vector.svg" alt="标识" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker（Windows 安装程序）</font></font></h1><a id="user-content-iobroker-windows-installer" class="anchor" aria-label="永久链接：ioBroker（Windows 安装程序）" href="#iobroker-windows-installer"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://www.npmjs.com/package/iobroker" rel="nofollow"><img src="https://camo.githubusercontent.com/2672113a1e2b766a3c7b6b2aa6154679bd1ce38d76b1f1f191d1763f6a5e8d79/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f696f62726f6b65722e737667" alt="NPM版本" data-canonical-src="https://img.shields.io/npm/v/iobroker.svg" style="max-width: 100%;"></a>
+<a href="https://www.npmjs.com/package/iobroker" rel="nofollow"><img src="https://camo.githubusercontent.com/465f26a69d35d18694d5ef659b8d824825d17d77420e01eb70b399c5df8fbf3e/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f646d2f696f62726f6b65722e737667" alt="下载" data-canonical-src="https://img.shields.io/npm/dm/iobroker.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://nodei.co/npm/iobroker/" rel="nofollow"><img src="https://camo.githubusercontent.com/fb3b4d44e40bdd1742f822f62d14d94bec57e678f6d29562b26716d298401dbc/68747470733a2f2f6e6f6465692e636f2f6e706d2f696f62726f6b65722e706e673f646f776e6c6f6164733d74727565" alt="国家公共管理" data-canonical-src="https://nodei.co/npm/iobroker.png?downloads=true" style="max-width: 100%;"></a></p>
+<p dir="auto"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让您的生活自动化！</font></font></em></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要在 Linux 上安装，只需运行：</font></font><code>npx @iobroker/install</code></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Windows 上安装：</font></font><code>mkdir C:\iobroker &amp;&amp; cd C:\iobroker &amp;&amp; npx @iobroker/install</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或使用</font></font><a href="https://github.com/ioBroker/ioBroker.build"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装程序</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://www.iobroker.net/#en/documentation" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取更多信息</font></font></p>
+<ul dir="auto">
+<li><a href="https://www.iobroker.net" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 网站</font></font></a></li>
+<li><a href="https://forum.iobroker.net" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论坛</font></font></a></li>
+<li><a href="https://github.com/ioBroker/AdapterRequests/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适配器请求</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 是一个</font></font><a href="https://en.wikipedia.org/wiki/Internet_of_Things" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物联网</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">集成平台，专注于楼宇自动化、智能计量、环境辅助生活、过程自动化、可视化和数据记录。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概念</font></font></h2><a id="user-content-concept" class="anchor" aria-label="永久链接：概念" href="#concept"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 不仅仅是一个应用程序，它更多的是一个概念和数据库模式。</font><font style="vertical-align: inherit;">它为系统互操作提供了一种非常简单的方法。</font><font style="vertical-align: inherit;">ioBroker 为用于在不同系统之间交换数据和发布事件的一对数据库定义了一些通用规则。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/ioBroker/ioBroker/blob/master/img/architecture.png"><img src="/ioBroker/ioBroker/raw/master/img/architecture.png" alt="建筑学" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据库</font></font></h3><a id="user-content-databases" class="anchor" aria-label="永久链接：数据库" href="#databases"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 使用“内存”数据库来保存数据，并以合理的时间间隔将其保存在磁盘上。</font><font style="vertical-align: inherit;">有两种类型的存储：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对象（元/配置信息）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">状态（值）</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对象和状态可以存储在“内存中”或 Redis 中。</font></font></p>
+<p dir="auto"><a href="https://redis.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Redis</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一个内存中键值数据存储，也是一个具有发布/订阅模式的消息代理。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它用于维护和发布连接系统的所有状态。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适配器</font></font></h3><a id="user-content-adapters" class="anchor" aria-label="永久链接：适配器" href="#adapters"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">系统通过所谓的适配器连接到 ioBrokers 数据库，从技术上讲，进程在网络中的任何位置运行，并将各种系统连接到 ioBrokers 数据库。</font><font style="vertical-align: inherit;">与 ioBrokers 数据库的连接可以在几乎任何平台上以几乎任何编程语言实现，并且适配器可以在任何能够通过 IP 网络访问数据库的主机上运行。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="https://www.iobroker.net/#en/adapters" rel="nofollow"><font style="vertical-align: inherit;">请参阅iobroker.net</font></a><font style="vertical-align: inherit;">上的实际适配器列表</font></font><a href="https://www.iobroker.net/#en/adapters" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全</font></font></h3><a id="user-content-security" class="anchor" aria-label="永久链接：安全" href="#security"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 旨在由受信任网络内的受信任适配器进行访问。</font><font style="vertical-align: inherit;">这意味着通常将 ioBroker 数据库、适配器或任何智能家居设备直接暴露在互联网上，或者一般情况下，暴露在不受信任的客户端可以直接访问这些网络服务的环境中并不是一个好主意。</font><font style="vertical-align: inherit;">应小心处理提供应暴露在互联网上的服务的适配器。</font><font style="vertical-align: inherit;">您应该始终激活</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTTPS</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并使用有效的 Web、管理证书（如果将其打开到 Internet），或者例如将其与 VPN、VLAN 和反向代理等其他安全措施一起使用。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></h2><a id="user-content-getting-started" class="anchor" aria-label="永久链接：开始使用" href="#getting-started"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">操作系统和硬件</font></font></h3><a id="user-content-operating-system-and-hardware" class="anchor" aria-label="永久链接：操作系统和硬件" href="#operating-system-and-hardware"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://github.com/iobroker/ioBroker.js-controller/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker.js-controller</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应该在运行</font></font><a href="https://nodejs.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node.js 的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何硬件和操作系统（ARM、x86、Windows、Linux、OSX）上运行。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker 为每个适配器实例生成一个新的 Node.js 进程，因此 RAM 成为限制因素。</font><font style="vertical-align: inherit;">单个适配器的内存指纹约为 10 到 60 MB。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和第一步</font></font></h3><a id="user-content-installation-and-first-steps" class="anchor" aria-label="永久链接：安装和第一步" href="#installation-and-first-steps"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><a href="https://www.iobroker.net/#en/download" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ioBroker下载</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区支持</font></font></h3><a id="user-content-community-support" class="anchor" aria-label="永久链接：社区支持" href="#community-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"></font><a href="https://forum.iobroker.net" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在ioBroker 论坛</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中获取帮助</font><font style="vertical-align: inherit;">（英语、德语和俄语）</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志和图片</font></font></h2><a id="user-content-logos-and-pictures" class="anchor" aria-label="永久链接：徽标和图片" href="#logos-and-pictures"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有徽标均受版权保护，未经许可不得使用。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><a href="mailto:info@iobroker.net"><font style="vertical-align: inherit;">请通过info@iobroker.net</font></a><font style="vertical-align: inherit;">请求许可</font></font><a href="mailto:info@iobroker.net"><font style="vertical-align: inherit;"></font></a></p>
+<p dir="auto"><a href="https://github.com/ioBroker/ioBroker/tree/master/img"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该模块是根据 MIT 许可证 (MIT) 发行的。
+</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，其他 ioBroker 适配器可能有不同的许可证。</font></font></strong></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麻省理工学院许可证 (MIT)</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">版权所有 (c) 2014-2023 bluefox </font></font><a href="mailto:dogafox@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dogafox@gmail.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，版权所有 (c) 2014 hobbyquaker</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特此免费授予获得本软件和相关文档文件（“软件”）副本的任何人不受限制地使用本软件，包括但不限于使用、复制、修改、合并的权利、发布、分发、再许可和/或销售软件的副本，并允许向其提供软件的人员这样做，但须满足以下条件：</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本软件按“原样”提供，不提供任何明示或暗示的保证，包括但不限于适销性、特定用途的适用性和不侵权的保证。</font><font style="vertical-align: inherit;">在任何情况下，作者或版权持有者均不对因本软件或本软件中的使用或其他交易而产生或与之相关的任何索赔、损害或其他责任负责，无论是合同、侵权行为还是其他行为。软件。</font></font></p>
+</article></div>
